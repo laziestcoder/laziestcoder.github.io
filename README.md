@@ -1,6 +1,6 @@
 # Portfolio
-![Towfiqul Islam CV](Towfiqul_Islam.pdf)
-![Towfiqul Islam Resume](Profile.pdf)
+![Towfiqul Islam CV](resume/Towfiqul_Islam.pdf)
+![Towfiqul Islam Resume](resume/Profile.pdf)
 
 <object data="https://github.com/laziestcoder/portfolio/blob/master/Profile.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://github.com/laziestcoder/portfolio/blob/master/Profile.pdf">
