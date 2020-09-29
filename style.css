@@ -1,0 +1,20 @@
+.footer_bottom {
+    min-height: 20px;
+    background-color: #23272b;
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container{
+    margin-top: 20px;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
