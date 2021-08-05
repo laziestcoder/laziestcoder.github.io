@@ -12,24 +12,21 @@
 </head>
 <body>
 <div class="body">
-    <div style="text-align: center;" class="information">
+    <div style="text-align: center; margin-top: 10px; margin-bottom: -4px; line-height: 20px;" class="information">
 
         <b style="font-size: 30px;">Towfiqul Islam</b>
 
-        <br><b>Software Engineer @
-        <a href="https://inflack.com" target="_blank" style="text-decoration: none;">
-                <span style="background-color: #000000; height: 0%; width: 15%;">
-                    <em>
-                        <span style="color: #F37A20"> in</span>
-                        <span style="color: #FFFFFF">flack</span>
-                        <span style="color: #F37A20">> </span>
-                    </em>
-                </span>
-        </a>
-    </b>
+        <span><br>
+            <b>
+                Software Engineer @
+                <span style="color: #0c5460; font-weight:bold; font-size: 20px"><em> Exabyting </em></span>
+            </b>
+        </span>
 
         <br>
-        <b>towfiq.106@gmail.com || +8801823923023</b>
+        <b>towfiq.106@gmail.com</b> ||
+        <b>+8801823923023</b> ||
+        <b><span style="color: #1c7430" id="totalExperience">0</span> of Experience</b>
 
     </div>
     <br>
@@ -47,7 +44,7 @@
 <footer>
 
     <div class="footer_bottom" style="alignment: center;">
-        Copyright &copy; 2019-2020. <> with
+        Copyright &copy; 2019 - <span id="currentYear">2020</span>. < /> with
         <svg class="svg-inline--fa fa-heart fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas"
              data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
             <path fill="currentColor"
@@ -60,6 +57,56 @@
 
 </footer>
 
+<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="application/javascript">
+    $(document).ready(function () {
+
+        var dString = "September, 5, 2019";
+
+        var joinDate = new Date(dString);
+        var today = new Date();
+
+
+        var currentYear = new Date().getFullYear();
+        var yearOfExp = parseInt(DateDiff.inMonths(joinDate, today)/12);
+        var monthOfExp = parseInt(DateDiff.inMonths(joinDate, today)%12);
+        var totalExperience = yearOfExp + "Y " + monthOfExp + "M ";
+        $("#currentYear").html(currentYear);
+        $("#totalExperience").html(totalExperience);
+
+    });
+
+
+
+    var DateDiff = {
+
+        inDays: function(d1, d2) {
+            var t2 = d2.getTime();
+            var t1 = d1.getTime();
+
+            return parseInt((t2-t1)/(24*3600*1000));
+        },
+
+        inWeeks: function(d1, d2) {
+            var t2 = d2.getTime();
+            var t1 = d1.getTime();
+
+            return parseInt((t2-t1)/(24*3600*1000*7));
+        },
+
+        inMonths: function(d1, d2) {
+            var d1Y = d1.getFullYear();
+            var d2Y = d2.getFullYear();
+            var d1M = d1.getMonth();
+            var d2M = d2.getMonth();
+
+            return (d2M+12*d2Y)-(d1M+12*d1Y);
+        },
+
+        inYears: function(d1, d2) {
+            return d2.getFullYear()-d1.getFullYear();
+        }
+    }
+
+</script>
 </html>
-
-
