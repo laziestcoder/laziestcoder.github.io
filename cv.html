@@ -61,15 +61,15 @@
 <script type="application/javascript">
     $(document).ready(function () {
 
-        var dString = "September, 5, 2019";
+        var joiningDate = "September, 5, 2019";
 
-        var joinDate = new Date(dString);
+        var careerStarted = new Date(joiningDate);
         var today = new Date();
 
 
         var currentYear = new Date().getFullYear();
-        var yearOfExp = parseInt(DateDiff.inMonths(joinDate, today)/12);
-        var monthOfExp = parseInt(DateDiff.inMonths(joinDate, today)%12);
+        var yearOfExp = parseInt(DateDiff.inMonths(careerStarted, today)/12);
+        var monthOfExp = parseInt(DateDiff.inMonths(careerStarted, today)%12);
         var totalExperience = yearOfExp + "Y " + monthOfExp + "M ";
         $("#currentYear").html(currentYear);
         $("#totalExperience").html(totalExperience);
