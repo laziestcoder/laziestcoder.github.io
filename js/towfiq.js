@@ -13,7 +13,7 @@ $(document).ready(function () {
     monthOfExp = daysOfExp < 15 ? (monthOfExp + 1) : monthOfExp;
     yearOfExp += monthOfExp/12;
     monthOfExp = monthOfExp%12;
-    var totalExperience = yearOfExp + "Y " + monthOfExp + "M ";
+    var totalExperience = parseInt(yearOfExp) + "Y " + monthOfExp + "M ";
     $("#currentYear").html(currentYear);
     $("#totalExperience").html(totalExperience);
 
