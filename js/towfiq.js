@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     var currentYear = new Date().getFullYear();
     var yearOfExp = parseInt(DateDiff.inMonths(careerStarted, today) / 12);
-    var monthOfExp = parseInt(DateDiff.inMonths(careerStarted, today) % 12);
+    var monthOfExp = parseInt((DateDiff.inMonths(careerStarted, today) + 1) % 12);
     var daysOfExp = parseInt(DateDiff.inDays(careerStarted, today) % 30);
     monthOfExp = daysOfExp < 15 ? (monthOfExp + 1) : monthOfExp;
     yearOfExp += monthOfExp/12;
