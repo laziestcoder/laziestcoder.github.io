@@ -5,14 +5,14 @@ $(document).ready(function () {
     var careerStarted = new Date(joiningDate);
     var today = new Date();
 
-
     var currentYear = new Date().getFullYear();
     var yearOfExp = parseInt(DateDiff.inMonths(careerStarted, today) / 12);
-    var monthOfExp = parseInt((DateDiff.inMonths(careerStarted, today) + 1) % 12);
-    var daysOfExp = parseInt(DateDiff.inDays(careerStarted, today) % 30);
-    monthOfExp = daysOfExp < 15 ? (monthOfExp + 1) : monthOfExp;
+    var monthOfExp = parseInt((DateDiff.inMonths(careerStarted, today) + 1) % 12) + 1;
     yearOfExp += monthOfExp/12;
     monthOfExp = monthOfExp%12;
+    // console.log(currentYear);
+    // console.log(monthOfExp);
+    // console.log(yearOfExp);
     var totalExperience = parseInt(yearOfExp) + "Y " + monthOfExp + "M ";
     $("#currentYear").html(currentYear);
     $("#totalExperience").html(totalExperience);
