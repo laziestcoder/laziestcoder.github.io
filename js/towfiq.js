@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var joiningDate = "May, 1, 2014";
+    var joiningDate = "October, 1, 2018";
 
     var careerStarted = new Date(joiningDate);
     var today = new Date();
