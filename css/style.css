@@ -74,3 +74,13 @@
   overflow: visible;
   vertical-align: -.125em;
 }
+
+@media only screen and (max-width: 480px) {
+  #profile_image{
+    width: 250px !important;
+    height: 250px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
