@@ -1,21 +1,19 @@
-$(document).ready(function () {
+$(document).ready(function yearOfExp() {
 
-    var joiningDate = "October, 1, 2018";
+    var joiningDate = "January, 1, 2018";
 
     var careerStarted = new Date(joiningDate);
     var today = new Date();
 
-
     var currentYear = new Date().getFullYear();
     var yearOfExp = parseInt(DateDiff.inMonths(careerStarted, today) / 12);
     var monthOfExp = parseInt((DateDiff.inMonths(careerStarted, today) + 1) % 12);
-    var daysOfExp = parseInt(DateDiff.inDays(careerStarted, today) % 30);
-    monthOfExp = daysOfExp < 15 ? (monthOfExp + 1) : monthOfExp;
     yearOfExp += monthOfExp/12;
     monthOfExp = monthOfExp%12;
     var totalExperience = parseInt(yearOfExp) + "Y " + monthOfExp + "M ";
     $("#currentYear").html(currentYear);
-    $("#totalExperience").html(totalExperience);
+    $("#totalExperienceMain").html(totalExperience);
+    $("#totalExperienceSummary").html(totalExperience);
 
 });
 
@@ -47,5 +45,33 @@ var DateDiff = {
 
     inYears: function (d1, d2) {
         return d2.getFullYear() - d1.getFullYear();
+    }
+}
+
+function includeHTML(fileName) {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute(fileName);
+        if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                    if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                    /* Remove the attribute, and call this function once more: */
+                    elmnt.removeAttribute(fileName);
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+        }
     }
 }
