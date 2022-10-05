@@ -10,12 +10,10 @@ $(document).ready(function yearOfExp() {
     var monthOfExp = parseInt((DateDiff.inMonths(careerStarted, today) + 1) % 12);
     yearOfExp += monthOfExp/12;
     monthOfExp = monthOfExp%12;
-    // console.log(currentYear);
-    // console.log(monthOfExp);
-    // console.log(yearOfExp);
     var totalExperience = parseInt(yearOfExp) + "Y " + monthOfExp + "M ";
     $("#currentYear").html(currentYear);
-    $("#totalExperience").html(totalExperience);
+    $("#totalExperienceMain").html(totalExperience);
+    $("#totalExperienceSummary").html(totalExperience);
 
 });
 
