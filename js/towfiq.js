@@ -13,6 +13,7 @@ $(document).ready(function yearOfExp() {
     if(monthOfExp === 0) yearOfExp++;
     var totalExperience = parseInt(yearOfExp) + "Y " + monthOfExp + "M ";
     $("#currentYear").html(currentYear);
+    $("#totalExperienceCV").html(totalExperience);
     $("#totalExperienceMain").html(totalExperience);
     $("#totalExperienceSummary").html(totalExperience);
 
