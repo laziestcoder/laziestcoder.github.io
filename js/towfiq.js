@@ -1,6 +1,6 @@
 $(document).ready(function yearOfExp() {
 
-    var joiningDate = "January, 1, 2018";
+    var joiningDate = "October, 1, 2018";
 
     var careerStarted = new Date(joiningDate);
     var today = new Date();
