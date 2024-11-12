@@ -44,11 +44,11 @@ SELISE, Zürich, Switzerland | Nov 2021 - Apr 2024
 - Implemented secure transaction systems using blockchain technology
 - Collaborated with international teams in an agile environment
 - Maintained high code quality through comprehensive testing and reviews
+- Led a 3-member team, ensuring consistent on-time delivery
 
 **Software Engineer** _(Remote)_  
 Exabyting, Dhaka, Bangladesh | Dec 2019 - Nov 2021
 - Spearheaded development of government and private sector web applications
-- Led a 3-member team, ensuring consistent on-time delivery
 - Collaborated with bKash Limited's Solution Engineering Team
 - Implemented clean coding practices and design patterns
 - Managed complete software development lifecycle in Agile environment
