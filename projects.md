@@ -1,5 +1,5 @@
 # Projects
 
-* [Selise Projects](https://www.github.com/laziestcoder/laziestcoder.github.io/blob/master/seliseProjects.md)
-* [bKash Projects](https://www.github.com/laziestcoder/laziestcoder.github.io/blob/master/bKashProjects.md)
-* [Exabyting Projects](https://www.github.com/laziestcoder/laziestcoder.github.io/blob/master/exabytingProjects.md)
+* [Selise Projects](https://www.github.com/laziestcoder/laziestcoder.github.io/blob/master/projectsSelise.md)
+* [bKash Projects](https://www.github.com/laziestcoder/laziestcoder.github.io/blob/master/projectsbKash.md)
+* [Exabyting Projects](https://www.github.com/laziestcoder/laziestcoder.github.io/blob/master/projectsExabyting.md)
